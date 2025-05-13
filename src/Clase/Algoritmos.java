@@ -50,4 +50,26 @@ public abstract class Algoritmos {
 			return factorial;
 		}
 	}
+	/**
+	 *  Recibe un número entero y devuelve true o false en función de si es primo o no.
+	 * 
+	 * @param num
+	 * @return num
+	 */
+	
+	public boolean primo(int num){
+	    boolean primo = false;
+	    
+	    if (num < 2)
+	        throw new IllegalArgumentException();
+	    else {
+	    		if (num % 2 == 0) return false;
+	    		for (int i = 3; i * i <= num; i++) {
+					if (num % i == 0)
+						return false;
+				}
+	    		return true;
+	    }
+	}
+	
 }

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"Clase","l":"Algoritmos"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"}];updateSearchResults();
