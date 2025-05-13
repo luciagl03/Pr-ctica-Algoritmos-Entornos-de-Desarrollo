@@ -32,5 +32,22 @@ public abstract class Algoritmos {
 
 	}
 	
+	/**
+	 * Recibe un número entero y devuelve el factorial de dicho número. 
+	 * 
+	 * @param num
+	 * @return factorial
+	 */
 	
+	public int factorial(int num) {
+		if (num < 0)
+			throw new IllegalArgumentException();
+		else {
+			int factorial = 1;
+			for (int i = 1; i <= num; i++) {
+				factorial *= i;
+			}
+			return factorial;
+		}
+	}
 }
